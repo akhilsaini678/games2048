@@ -31,5 +31,14 @@ Steps which I am doing :
                 c. Requirements.txt      : All modules and framework which are needed.
             
             2. Debug = False
-               
+
+     Deployment is working fine.
     
+
+    3.
+        Now, it's to work on UI.
+        I have created basic UI with some CSS.
+        UI is completed.
+        I have used divison to make UI, now I just need to put data from 2-D list from views.py function to here.
+
+    4. 

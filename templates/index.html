@@ -1,12 +1,46 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static '/css/main.css' %}" rel="stylesheet" media="all">
     <title>2048</title>
 </head>
 <body>
-    <h1>2048 Game</h1>
+    <div class="main">
+        <div class="score">
+            <span style="width: 50%; font-size: 4rem; color: rgb(61, 3, 49);">2048</span>
+            <span style="width: 50%; float:right; font-size: 2rem; color: rgb(61, 3, 49);">Score : 0</span>
+        </div>
+        <div class="main_box">
+            <div class="row_class">
+                <div class="column_class">0</div>
+                <div class="column_class">0</div>
+                <div class="column_class">0</div>
+                <div class="column_class">0</div>
+            </div>
+            <div class="row_class">
+                <div class="column_class">0</div>
+                <div class="column_class">0</div>
+                <div class="column_class">0</div>
+                <div class="column_class">0</div>
+            </div>
+            <div class="row_class">
+                <div class="column_class">0</div>
+                <div class="column_class">0</div>
+                <div class="column_class">0</div>
+                <div class="column_class">0</div>
+            </div>
+            <div class="row_class">
+                <div class="column_class">0</div>
+                <div class="column_class">0</div>
+                <div class="column_class">0</div>
+                <div class="column_class">0</div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

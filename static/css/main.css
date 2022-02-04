@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+}
+
+body {
+    background-color: rgb(250, 224, 239);;
+}
+
+
+.main {
+    margin: auto;
+    margin-top: 12vh;
+    margin-bottom: 12vh;
+    width: 70vh;
+}
+
+.main_box {
+    width: 70vh;
+    height: 70vh;
+    margin: auto;
+    padding: 1vh;
+    background-color: rgb(245, 153, 210);
+    border-radius: 6px;
+}
+
+.row_class {
+    width: 68vh;
+    height: 15vh;
+}
+
+.column_class {
+    width: 15vh;
+    height: 15vh;
+    text-align: center;
+    float: left;
+    font-size: 3rem;
+    padding: 3vh;
+    margin: 1vh;
+    color: white;
+    border-radius: 3px;
+    background-color: rgb(146, 80, 146);
+}
