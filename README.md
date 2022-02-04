@@ -5,11 +5,19 @@
 Steps which I am doing :
     
     1. 
-        a. Created a git repository on github.
-        b. Clone it into my local disk.
-        c. Created Virtual Enviroment.
-        d. Installed Django in virtual Environment.
-        e. Starting a new Python Django App named as games2048.
-        f. Create a new app inside games2048 folder names as games2048_app (Main app in which all work will be done.)
-        g. Now , created two folder in it names as static and templates to keep HTML and CSS file.
+        a.  Created a git repository on github.
+        b.  Clone it into my local disk.
+        c.  Created Virtual Enviroment.
+        d.  Installed Django in virtual Environment.
+        e.  Starting a new Python Django App named as games2048.
+        f.  Create a new app inside games2048 folder names as games2048_app (Main app in which all work will be done.)
+        g.  Now , created two folder in it names as static and templates to keep HTML and CSS file.
+    
+    
+    
+    2.
+        a.  View is created in views.py and a index file is created in templates.
+        b.  Static Files location is set in setting.py and templates directory location is also added in setting.py.
+        c.  Url path is added in urls.py.
+        d.  Now app is at it's initial phase now, I am going to create simple UI for the app.
     
