@@ -16,30 +16,18 @@
             <span style="width: 50%; float:right; font-size: 2rem; color: rgb(61, 3, 49);">Score : 0</span>
         </div>
         <div class="main_box">
+            {% for i in arr %}
             <div class="row_class">
-                <div class="column_class">0</div>
-                <div class="column_class">0</div>
-                <div class="column_class">0</div>
-                <div class="column_class">0</div>
+                {% for j in i %}
+                <div class="column_class">
+                    {% if j %}
+                        {{j}}
+                    {% else %}
+                    {% endif %}
+                </div>
+                {% endfor %}
             </div>
-            <div class="row_class">
-                <div class="column_class">0</div>
-                <div class="column_class">0</div>
-                <div class="column_class">0</div>
-                <div class="column_class">0</div>
-            </div>
-            <div class="row_class">
-                <div class="column_class">0</div>
-                <div class="column_class">0</div>
-                <div class="column_class">0</div>
-                <div class="column_class">0</div>
-            </div>
-            <div class="row_class">
-                <div class="column_class">0</div>
-                <div class="column_class">0</div>
-                <div class="column_class">0</div>
-                <div class="column_class">0</div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </body>

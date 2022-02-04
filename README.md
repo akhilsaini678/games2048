@@ -42,3 +42,5 @@ Steps which I am doing :
         I have used divison to make UI, now I just need to put data from 2-D list from views.py function to here.
 
     4. 
+        a. Now it's main logic turn.
+           Taking a 2-D list of size N where N is 4. And will perform all operations on it.
