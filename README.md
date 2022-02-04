@@ -49,4 +49,14 @@ Steps which I am doing :
 
     ** The main problem is here with me that I want to call a function from frontend in my views.py. So for this purpose either I have to use ajax or fetch API to send a request to a URL, but to keep it simple I am using a framework of django which will "call" Python functions from the front-end HTML (it provides the infrastructure so I don't have to create AJAX endpoints or deal with serializing data).
 
-        c.  
+        c. So, it was the first time, I was using unicorn.
+            What changes I need to do , when using unicorn.
+                a. A new unicorn specific app is created, I named it as "unicorn_folder".
+                b. I added a component inside it named as "component1". 
+                c. So, component one contain both template folder and components folder.
+                d. My complete logic is in component folder -> component1.html. I have to do this because I need to update grid without refreshing.
+                e. All the template related to grid is in templates -> component1.html.
+                f. I have to pass the arr and score variable from views.py to index.html and from index.html I am using it in unicorn folder.
+
+    5. Now, it's time to fix bugs.
+
