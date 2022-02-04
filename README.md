@@ -42,5 +42,11 @@ Steps which I am doing :
         I have used divison to make UI, now I just need to put data from 2-D list from views.py function to here.
 
     4. 
-        a. Now it's main logic turn.
-           Taking a 2-D list of size N where N is 4. And will perform all operations on it.
+        a.  Now it's main logic turn.
+            Taking a 2-D list of size N where N is 4. And will perform all operations on it.
+        
+        b.  I have created 2-d list and I have added a functio which will search all the empty box and then put randomly on any of the index either 2 or 4 (randomly).
+
+    ** Problem I am facing now, how I can run a function when keyboard arrow button is pressed working on it now.
+
+    
