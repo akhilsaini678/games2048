@@ -1,4 +1,5 @@
 {% load static %}
+{% load unicorn %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,27 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{% static '/css/main.css' %}" rel="stylesheet" media="all">
     <title>2048</title>
+    {% unicorn_scripts %}
 </head>
 <body>
-    <div class="main">
-        <div class="score">
-            <span style="width: 50%; font-size: 4rem; color: rgb(61, 3, 49);">2048</span>
-            <span style="width: 50%; float:right; font-size: 2rem; color: rgb(61, 3, 49);">Score : 0</span>
-        </div>
-        <div class="main_box">
-            {% for i in arr %}
-            <div class="row_class">
-                {% for j in i %}
-                <div class="column_class">
-                    {% if j %}
-                        {{j}}
-                    {% else %}
-                    {% endif %}
-                </div>
-                {% endfor %}
-            </div>
-            {% endfor %}
-        </div>
+    {% csrf_token %}
+    {% unicorn 'component1' number=num array=arr scores:score %}
     </div>
 </body>
 </html>

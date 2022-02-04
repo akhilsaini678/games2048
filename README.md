@@ -47,3 +47,6 @@ Steps which I am doing :
         
         b.  I have created 2-d list and I have added a function which will search all the empty box and then put randomly on any of the index either 2 or 4 (randomly).
 
+    ** The main problem is here with me that I want to call a function from frontend in my views.py. So for this purpose either I have to use ajax or fetch API to send a request to a URL, but to keep it simple I am using a framework of django which will "call" Python functions from the front-end HTML (it provides the infrastructure so I don't have to create AJAX endpoints or deal with serializing data).
+
+        c.  

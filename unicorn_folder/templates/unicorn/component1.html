@@ -1,0 +1,28 @@
+<!-- unicorn/templates/unicorn/todo.html -->
+<div class="main">
+    <div class="score">
+        <span style="width: 50%; font-size: 4rem; color: rgb(61, 3, 49);">2048</span>
+        <span style="width: 50%; float:right; font-size: 2rem; color: rgb(61, 3, 49);">Score : {{score}}</span>
+    </div>
+    <div class="main_box">
+        {% for i in arr %}
+        <div class="row_class">
+            {% for j in i %}
+            <div class="column_class">
+                {% if j %}
+                    {{j}}
+                {% else %}
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+    <div>
+        <button unicorn:click="left">Left</button>
+        <button unicorn:click="right">Right</button>
+        <button unicorn:click="up">Up</button>
+        <button unicorn:click="down">Down</button>
+    </div>
+    <button unicorn:click="$reset">Clear all tasks</button>
+</div>

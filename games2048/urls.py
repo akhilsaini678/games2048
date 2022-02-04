@@ -22,4 +22,5 @@ import games2048_app
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('games2048_app.urls')),
+    path("unicorn/", include("django_unicorn.urls")),
 ]
