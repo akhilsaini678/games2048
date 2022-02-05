@@ -18,11 +18,11 @@
         </div>
         {% endfor %}
     </div>
-    <div>
-        <button class="bt_main" unicorn:click="left">Left</button>
-        <button class="bt_main" unicorn:click="right">Right</button>
-        <button class="bt_main" unicorn:click="up">Up</button>
-        <button class="bt_main" unicorn:click="down">Down</button>
+    <div style="padding: 1vh;">
+        <button class="bt_main" unicorn:click="shifting('Left')" >Left</button>
+        <button class="bt_main" unicorn:click="shifting('Right')">Right</button>
+        <button class="bt_main" unicorn:click="shifting('Up')">Up</button>
+        <button class="bt_main" unicorn:click="shifting('Down')">Down</button>
     </div>
     <button class="clear_all" unicorn:click="reset">Clear all tasks</button>
 </div>

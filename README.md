@@ -77,4 +77,12 @@ Steps which I am doing :
     If there is any bug, then I need to find that.
 
 
+    7. Okay, so as I mentioned above that I have to maintain 4 different function to do all 4 operation.
 
+    **** The Optimisation ****
+    I generalised the left_shift,right_shift,up_shift,down_shift into one "shifting" function.
+    I am maintaining start_index, end_index, and direcection (backward or forward).
+    So, all the 4 operation are being maintained by single "shifting function".
+
+    Left_shifting and Up_shifting is quite similiar. ( Because, index increases in forward direction )
+    Right_shifting and Down_shifting is quite similiar. ( Because, index increases in backword direction )
