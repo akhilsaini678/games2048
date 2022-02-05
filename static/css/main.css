@@ -102,26 +102,26 @@ body {
         padding: 1vw;
     }
     .row_class {
-        height: 16vw
+        height: 20vw
     }
     
     .column_class {
-        width: 14vw;
-        height: 14vw;
-        line-height: 14vw;
+        width: 18vw;
+        height: 18vw;
+        line-height: 18vw;
         margin: 1vw;
     }
     
     .bt_main {
-        width: 14vw;
-        height: 14vw;
+        width: 18vw;
+        height: 18vw;
         font-size: 1rem;
-        line-height: 14vw;
+        line-height: 18vw;
         margin: 1vw;
     }
     
     .clear_all {
-        height: 14vw;
+        height: 18vw;
         padding: 3vw;
         margin: 1vw;
     }
