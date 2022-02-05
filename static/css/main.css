@@ -68,3 +68,55 @@ body {
     border-radius: 3px;
     background-color: rgb(146, 80, 146);   
 }
+
+.score span {
+    width: 50%;
+    font-size: 6vh;
+    color: rgb(61, 3, 49);
+}
+
+.move_button {
+    padding: 1vh; 
+    margin: auto;
+}
+
+.reset_button {
+    margin: auto;
+    width: inherit;
+}
+
+
+@media  screen and (max-width:768px) {
+    .main_box {
+        padding: 1vw;
+    }
+    .row_class {
+        height: 14vw
+    }
+    
+    .column_class {
+        width: 12vw;
+        height: 12vw;
+        line-height: 12vw;
+        margin: 1vw;
+    }
+    
+    .bt_main {
+        width: 12vw;
+        height: 12vw;
+        line-height: 12vw;
+        margin: 1vw;
+    }
+    
+    .clear_all {
+        height: 12vw;
+        padding: 3vw;
+        margin: 1vw;
+    }
+
+    .score span {
+        width: 50%;
+        font-size: 6vw;
+        color: rgb(61, 3, 49);
+    }
+}
