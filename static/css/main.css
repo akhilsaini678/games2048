@@ -56,3 +56,15 @@ body {
     border-radius: 3px;
     background-color: rgb(146, 80, 146);   
 }
+
+.clear_all {
+    width: 70vh;
+    height: 15vh;
+    text-align: center;
+    font-size: 1rem;
+    padding: 3vh;
+    margin: 1vh;
+    color: white;
+    border-radius: 3px;
+    background-color: rgb(146, 80, 146);   
+}
