@@ -2,7 +2,7 @@
 <div class="main">
     <div class="score">
         <span style="width: 50%; font-size: 4rem; color: rgb(61, 3, 49);">2048</span>
-        <span style="width: 50%; float:right; font-size: 2rem; color: rgb(61, 3, 49);">Score : {{score}}</span>
+        <span style="width: 50%; float:right; font-size: 2rem; color: rgb(61, 3, 49);">Score : {{score.0}}</span>
     </div>
     <div class="main_box">
         {% for i in arr %}
@@ -19,10 +19,10 @@
         {% endfor %}
     </div>
     <div>
-        <button unicorn:click="left">Left</button>
-        <button unicorn:click="right">Right</button>
-        <button unicorn:click="up">Up</button>
-        <button unicorn:click="down">Down</button>
+        <button class="bt_main" unicorn:click="left">Left</button>
+        <button class="bt_main" unicorn:click="right">Right</button>
+        <button class="bt_main" unicorn:click="up">Up</button>
+        <button class="bt_main" unicorn:click="down">Down</button>
     </div>
-    <button unicorn:click="$reset">Clear all tasks</button>
+    <button unicorn:click="reset">Clear all tasks</button>
 </div>
