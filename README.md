@@ -60,3 +60,21 @@ Steps which I am doing :
 
     5. Now, it's time to fix bugs.
 
+    6.
+
+    Basic structure and logic of my program.
+
+    There are 6 operations which I am doing :
+
+    1. Left_shift.
+    2. Right_shift.
+    3. Up_shift.
+    4. Down_shift.
+    5. After shifting or in the start of the game, use an empty index and put a random value either 2 or 4.
+    6. Score updation.
+
+    Now, all these operations are in working condition.
+    If there is any bug, then I need to find that.
+
+
+
