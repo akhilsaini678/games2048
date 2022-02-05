@@ -1,0 +1,74 @@
+Link of deployed app : http://games2048.herokuapp.com/
+
+Here, I am writing all the steps which I followed while developing this app.
+Although, I was writing everything in detail about each step in Read.me.
+Here, I will write in short.
+
+
+01. Why I choose python?
+    I have created my previous 2 project in python with Django, and have experience in it.
+    So, I decided to it with python and Django.
+
+
+02. Where did I write each part of the program in my app folder (games2048).
+    a. Main Page                            : index.html ( games2048/static )
+    b. CSS                                  : main.css ( games2048/templates/css )
+    c. Code required to deploy on heroku    : setting.py ( games2048/setting.py )
+    d. Created a View                       : views.py ( games2048_app/views.py )
+    e. Main Logic of game                   : component1.py ( unicorn_folder/components/component1.py )
+    f. Main Structure of index page         : component1.html ( unicorn_folder/components/component1.html )
+
+    ** Q.   Why I created a new unicorn_folder, I could have write main logic in views.py?
+            Initially, when I started working on the app, so I required to make changes to the matrix
+            without refreshing page. There was 2 option either I do it with ajax and make HTTP call manually.
+            Which will make it a little complicated and will require more time.
+            So, I use unicorn framework, which does all these thing by itself.
+            That is the reason, I shifted my index page structure and main logic in unicorn folder.
+
+Q3. Problems which I faced and assumptions which I make to solve it?
+
+    a. Changing data on matrix, without refreshing the page : Use Unicorn for that purpose.
+    
+    b. There is 4 shift possible : [ Left, Right, Up, Down ]. Initially, I write specific
+       function for each of the shift operation. 
+       But then I generalised it, into a single function. 
+
+       I generalised the left_shift,right_shift,up_shift,down_shift into one "shifting" function.
+       I am maintaining start_index, end_index, and direcection (backward or forward).
+       So, all the 4 operation are being maintained by single "shift function".
+
+       Left_shifting and Up_shifting is quite similiar. ( Because, index increases in forward direction )
+       Right_shifting and Down_shifting is quite similiar. ( Because, index increases in backword direction )
+
+
+    c. Need to check if I need to randomly generate a new value or not.
+
+       As I was playing game on "https://play2048.co/", I noticed that when the matrix remain same even after shifting,
+       then it doesn't require to generate new random value.
+
+       So, I make a deepcopy of matrix before shifting, and after shifting I check if the matrix is same or not.
+       If matrix remain same, then I don't generate a new random cell.
+       Otherwise, I generate a new random cell.
+
+    d. How to identify if player reached at 2048 cell value, I need to declare him winner and stop the game.
+       
+       So, I know that value changes only when we make shifting operation and consecutive elements are same.
+       So, as soon as I added a new element after the sum of consecutive element, then I will call random_element_generation function.
+       And before generating a random value, I will traverse for each cell and check if it empty, so while traversing I can check 
+       if value is 2048 or not. If it is then I don't need to generate a new value and I return the function and declare that it is winner,
+       Otherwise, I continue to add empty value in list to get random index value later and add a random 2 or 4 in it.
+
+    
+    e. How do I know that player doesn't left with any possible shift operation?
+
+       After playing game, I come to know that after shifting operation, if there is a situation that only one empty
+       cell is left, then I will need to put a random value in that cell. So, if after putting a random value in it.
+       I will check for every four neighbour element of each cell, if any of the consecutive elements are not same , then
+       It is clear that , any [ Left, Right, Up, Down ] shift operation can't be done. 
+       So, I check it in random_element_generation function, if after putting last element in the matrix, there is no consecutive same value
+       Then, I mark game_end=1 and stop the function and give message to the user of trying again.
+
+
+
+
+

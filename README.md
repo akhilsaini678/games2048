@@ -36,7 +36,7 @@ Steps which I am doing :
     
 
     3.
-        Now, it's to work on UI.
+        Now, it's time to work on UI.
         I have created basic UI with some CSS.
         UI is completed.
         I have used divison to make UI, now I just need to put data from 2-D list from views.py function to here.
@@ -60,9 +60,7 @@ Steps which I am doing :
 
     5. Now, it's time to fix bugs.
 
-    6.
-
-    Basic structure and logic of my program.
+    6. Basic structure and logic of my program.
 
     There are 6 operations which I am doing :
 

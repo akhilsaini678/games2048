@@ -1,27 +1,34 @@
 <!-- unicorn/templates/unicorn/todo.html -->
+
+<!-- This is the main structure of index page  -->
+
 <div class="main">
+
     <div class="game_name">Game : 2048</div>
     <div class="score">Score : {{score.0}}</div>
+    
+    <!-- Genrating all row and column division using python for loop -->
     <div class="main_box">
         {% for i in matrix %}
         <div class="row_class">
             {% for j in i %}
             <div class="column_class">
-                {% if j %}
+                 {% if j %}   <!-- If j (cell_value of matrix) is not 0 then show it otherwise not -->
                     {{j}}
-                {% else %}
                 {% endif %}
             </div>
             {% endfor %}
         </div>
         {% endfor %}
     </div>
+
     <div class="move_button">
         <button class="bt_main" unicorn:click="shifting('Left')" >Left</button>
         <button class="bt_main" unicorn:click="shifting('Right')">Right</button>
         <button class="bt_main" unicorn:click="shifting('Up')">Up</button>
         <button class="bt_main" unicorn:click="shifting('Down')">Down</button>
     </div>
+    
     <div class="reset_button">
         <button class="clear_all" unicorn:click="reset">
             {% if game_over.0 == 1 %}
