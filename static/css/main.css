@@ -12,7 +12,6 @@ body {
 
 .main {
     margin: auto;
-    margin-top: 12vh;
     margin-bottom: 12vh;
     width: fit-content;
 }
@@ -69,11 +68,7 @@ body {
     background-color: rgb(146, 80, 146);   
 }
 
-.score span {
-    width: 50%;
-    font-size: 6vh;
-    color: rgb(61, 3, 49);
-}
+
 
 .move_button {
     padding: 1vh; 
@@ -83,6 +78,22 @@ body {
 .reset_button {
     margin: auto;
     width: inherit;
+}
+
+
+.game_name {
+    font-size: 6vh;
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    color: rgb(61, 3, 49);
+}
+
+.score {
+    font-size: 6vh;
+    text-align: center;
+    margin-bottom: 3vh;
+    color: rgb(61, 3, 49);
 }
 
 
@@ -104,6 +115,7 @@ body {
     .bt_main {
         width: 12vw;
         height: 12vw;
+        font-size: 1rem;
         line-height: 12vw;
         margin: 1vw;
     }
@@ -114,9 +126,14 @@ body {
         margin: 1vw;
     }
 
-    .score span {
-        width: 50%;
+    .game_name {
         font-size: 6vw;
-        color: rgb(61, 3, 49);
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+    
+    .score {
+        font-size: 6vw;
+        margin-bottom: 3vw;
     }
 }

@@ -71,6 +71,9 @@ def shift(matrix,score,operation):
     startIndex,endIndex,direction=0,0,0
     Size=len(matrix[0])
 
+    matrix_copy = copy.deepcopy(matrix)
+
+
     # Initializing , startIndex, endIndex, direction according to shift direction
     if operation=="Left" or operation=="Up" :
         startIndex, endIndex, direction = 0, Size, 1
@@ -119,6 +122,12 @@ def shift(matrix,score,operation):
             index+= direction
         
         fun_copy(matrix, tmp_array, operation, i)
+    
+
+    if matrix!=matrix_copy:
+        return True
+    else:
+        return False
 
 
 
@@ -151,8 +160,8 @@ class Component1View(UnicornView):
     
     def shifting(self,operation):
         if self.game_over[0] == 0:
-            shift(self.matrix, self.score, operation)
-            random_box_slection(self.matrix,self.score,self.game_over)
+            if(shift(self.matrix, self.score, operation)):
+                random_box_slection(self.matrix,self.score,self.game_over)
 
 
     def reset(self):

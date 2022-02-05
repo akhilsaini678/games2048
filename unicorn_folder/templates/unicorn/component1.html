@@ -1,9 +1,7 @@
 <!-- unicorn/templates/unicorn/todo.html -->
 <div class="main">
-    <div class="score">
-        <span>2048</span>
-        <span>Score : {{score.0}}</span>
-    </div>
+    <div class="game_name">Game : 2048</div>
+    <div class="score">Score : {{score.0}}</div>
     <div class="main_box">
         {% for i in matrix %}
         <div class="row_class">

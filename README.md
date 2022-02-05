@@ -86,3 +86,9 @@ Steps which I am doing :
 
     Left_shifting and Up_shifting is quite similiar. ( Because, index increases in forward direction )
     Right_shifting and Down_shifting is quite similiar. ( Because, index increases in backword direction )
+
+    
+    8.
+        Case which I was missing and I found out now,
+        If any of the shift operation is done and the array remain same so we won't generate a new random element.
+        Until, array is changed , so I am making a deepcopy (Because matrix is a nested list , otherwise copy would also have worked.) and shifting and checking if previous matrix is same as new matrix, so I don't generate new random element otherwise generate a new random element.
