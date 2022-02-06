@@ -30,24 +30,28 @@
                 case "KeyS":
                 case "ArrowDown":
                     // Handle Down Shift
+                    event.preventDefault();
                     var downButton= document.getElementById("down_btn");
                     downButton.click();
                     break;
                 case "KeyW":
                 case "ArrowUp":
                     // Handle Up Shift
+                    event.preventDefault();
                     var upButton= document.getElementById("up_btn");
                     upButton.click();
                     break;
                 case "KeyA":
                 case "ArrowLeft":
                     // Handle Left Shift
+                    event.preventDefault();
                     var leftButton= document.getElementById("left_btn");
                     leftButton.click();
                     break;
                 case "KeyD":
                 case "ArrowRight":
                     // Handle Right Shift
+                    event.preventDefault();
                     var rightButton= document.getElementById("right_btn");
                     rightButton.click();
                     break;
