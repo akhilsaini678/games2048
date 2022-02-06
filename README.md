@@ -2,6 +2,11 @@
 2048 Game is a web-application, which I made for the Application Based Problem for Ather.
 Link of deployed app : http://games2048.herokuapp.com/
 
+*** Important *** 
+There is problem on deployment, if shifiting operation is performed too fast , then unicorn failed to maintain 
+the right sequence of data and give checksum error. So, if playing on deployment then we have to do operation slowly.
+On local host, it works fine.
+
 Steps which I am doing :
     
     1. 
