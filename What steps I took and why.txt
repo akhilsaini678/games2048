@@ -1,4 +1,18 @@
+Process to run app on local machine.
+1. Open the application folder in Visual Studio Code.
+2. Run virtual environment by 'pipenv shell'
+3. Run the app, 'python manage.py runserver'
+4. Open browser and open address 'http://127.0.0.1:8000/'
+
+
+
 Link of deployed app : http://games2048.herokuapp.com/
+*** Important *** 
+There is bug on deployment, if shifiting operation is performed too fast , then unicorn failed to maintain 
+the right sequence of data and give checksum error. So, if playing on deployment then we have to do operation slowly.
+On local host, it works fine.
+
+
 
 Here, I am writing all the steps which I followed while developing this app.
 Although, I was writing everything in detail about each step in Read.me.
