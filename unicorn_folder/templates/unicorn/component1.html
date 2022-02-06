@@ -22,11 +22,46 @@
         {% endfor %}
     </div>
 
+
+    <!-- Javascript Code to handle A, S, D, F or arrow button events -->
+    <script>
+        window.addEventListener("keydown", function(event) {
+            switch(event.code) {
+                case "KeyS":
+                case "ArrowDown":
+                    // Handle Down Shift
+                    var downButton= document.getElementById("down_btn");
+                    downButton.click();
+                    break;
+                case "KeyW":
+                case "ArrowUp":
+                    // Handle Up Shift
+                    var upButton= document.getElementById("up_btn");
+                    upButton.click();
+                    break;
+                case "KeyA":
+                case "ArrowLeft":
+                    // Handle Left Shift
+                    var leftButton= document.getElementById("left_btn");
+                    leftButton.click();
+                    break;
+                case "KeyD":
+                case "ArrowRight":
+                    // Handle Right Shift
+                    var rightButton= document.getElementById("right_btn");
+                    rightButton.click();
+                    break;
+            }
+        }, true);
+    </script>
+
+
+
     <div class="move_button">
-        <button class="bt_main" unicorn:click="shifting('Left')" >Left</button>
-        <button class="bt_main" unicorn:click="shifting('Right')">Right</button>
-        <button class="bt_main" unicorn:click="shifting('Up')">Up</button>
-        <button class="bt_main" unicorn:click="shifting('Down')">Down</button>
+        <button class="bt_main" id="left_btn" unicorn:click="shifting('Left')" >Left</button>
+        <button class="bt_main" id="right_btn" unicorn:click="shifting('Right')">Right</button>
+        <button class="bt_main" id="up_btn" unicorn:click="shifting('Up')">Up</button>
+        <button class="bt_main" id="down_btn" unicorn:click="shifting('Down')">Down</button>
     </div>
     
     <div class="reset_button">

@@ -69,6 +69,9 @@ Q3. Problems which I faced and assumptions which I make to solve it?
        Then, I mark game_end=1 and stop the function and give message to the user of trying again.
 
 
-
+    f. I have added button, so that it can be played on mobile devices also, I could have trigger shift by gesture also,
+        But to keep it simple I added just button.
+        On computer screen, keyboard button A,S,D,F or arrow key will also work.
+    
 
 
